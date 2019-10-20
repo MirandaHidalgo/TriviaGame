@@ -102,8 +102,8 @@ var game = {
 
         $("#subcontainer h2").remove();
         panel.html("<h2>You're Done!</h2>");
-        panel.append("<h3>You got this many right: " + this.correct + "</h3>");
-        panel.append("<h3>You got this many wrong: " + this.incorrect + "</h3>");
+        panel.append("<h3>You got this many wrong: " + this.correct + "</h3>");
+        panel.append("<h3>You got this many right: " + this.incorrect + "</h3>");
         panel.append("<h3>You didn't answer this many: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
 
     }
