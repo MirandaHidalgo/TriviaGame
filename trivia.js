@@ -22,4 +22,18 @@ var questions = [{
     rightAnswer: "That was easy! This is it!"
 }];
 
+var quiz = {
+    correct: 0,
+    incorrect: 0,
+    counter: 30,
 
+    countdown: function (){
+        game.counter--;
+        $('#counter-number').html(game.counter);
+
+        if (game.counter === 00) {
+            alert("TIME IS OVER!");
+            game.done()
+        }
+    }
+},
